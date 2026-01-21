@@ -1,0 +1,89 @@
+print("🚗 Welcome to Smart Parking System Chatbot")
+print("Type 'help' to see options or 'exit' to quit")
+
+available_slots = 12
+
+while True:
+    user = input("You: ").lower()
+
+    # Greetings
+    if user in ["hi", "hello", "hey"]:
+        print("Bot: Hello! Welcome to Smart Parking System 🚗")
+
+    elif user == "help":
+        print("Bot: Ask about slots, fee, time, location, ev, contact, rules")
+
+    # Parking availability
+    elif user in ["slots", "available", "empty slots"]:
+        print(f"Bot: {available_slots} parking slots are available.")
+
+    elif user == "full":
+        print("Bot: No, parking is not full right now.")
+
+    elif user == "car slots":
+        print("Bot: Car parking slots are available.")
+
+    elif user == "bike slots":
+        print("Bot: Separate bike parking is available.")
+
+    # Charges
+    elif user in ["fee", "parking fee"]:
+        print("Bot: Parking fee is ₹30 per hour.")
+
+    elif user == "one hour cost":
+        print("Bot: ₹30 for one hour.")
+
+    elif user == "two hours cost":
+        print("Bot: ₹60 for two hours.")
+
+    elif user == "daily charge":
+        print("Bot: Daily parking charge is ₹300.")
+
+    elif user == "monthly pass":
+        print("Bot: Monthly pass costs ₹2000.")
+
+    # Time
+    elif user in ["parking time", "timings"]:
+        print("Bot: Parking is available 24/7.")
+
+    elif user == "night parking":
+        print("Bot: Yes, night parking is allowed.")
+
+    # Location
+    elif user in ["location", "address"]:
+        print("Bot: Parking is near City Mall, Main Road, Hyderabad.")
+
+    elif user == "parking ekkada":
+        print("Bot: City Mall pakkana parking undi.")
+
+    # Facilities
+    elif user in ["electric vehicle", "ev charging", "ev"]:
+        print("Bot: EV charging facility is available.")
+
+    elif user == "cctv":
+        print("Bot: Parking area is under CCTV surveillance.")
+
+    elif user == "security":
+        print("Bot: Security is available 24 hours.")
+
+    # Rules & safety
+    elif user == "rules":
+        print("Bot: Follow speed limits and park only in allotted slots.")
+
+    elif user == "helmet rule":
+        print("Bot: Helmet is mandatory for two-wheelers.")
+
+    # Support
+    elif user == "contact":
+        print("Bot: Call 98765-43210 for support.")
+
+    elif user in ["complaint", "problem"]:
+        print("Bot: Please contact parking office for assistance.")
+
+    # Exit
+    elif user in ["exit", "quit", "bye"]:
+        print("Bot: Thank you for using Smart Parking System 🚘")
+        break
+
+    else:
+        print("Bot: Sorry, I didn't understand. Type 'help'.")
